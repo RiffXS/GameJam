@@ -6,11 +6,11 @@ public class GrapplingGun : MonoBehaviour
     public GrapplingRope grappleRope;
 
     [Header("Layers Settings:")]
-    [SerializeField] private bool grappleToAll = false;
+    [SerializeField] private bool grappleToAll;
     [SerializeField] private int grappableLayerNumber = 9;
 
     [Header("Main Camera:")]
-    public Camera m_camera;
+    public new Camera camera;
 
     [Header("Transform Ref:")]
     public Transform gunHolder;
@@ -18,32 +18,32 @@ public class GrapplingGun : MonoBehaviour
     public Transform firePoint;
 
     [Header("Physics Ref:")]
-    public SpringJoint2D m_springJoint2D;
-    public Rigidbody2D m_rigidbody;
+    public SpringJoint2D springJoint2D;
+    public new Rigidbody2D rigidbody;
 
     [Header("Rotation:")]
     [SerializeField] private bool rotateOverTime = true;
     [Range(0, 60)] [SerializeField] private float rotationSpeed = 4;
 
     [Header("Distance:")]
-    [SerializeField] private bool hasMaxDistance = false;
-    [SerializeField] private float maxDistnace = 20;
+    [SerializeField] private bool hasMaxDistance;
+    [SerializeField] private float maxDistance = 20;
 
     private enum LaunchType
     {
-        Transform_Launch,
-        Physics_Launch
+        TransformLaunch,
+        PhysicsLaunch
     }
 
     [Header("Launching:")]
     [SerializeField] private bool launchToPoint = true;
-    [SerializeField] private LaunchType launchType = LaunchType.Physics_Launch;
+    [SerializeField] private LaunchType launchType = LaunchType.PhysicsLaunch;
     [SerializeField] private float launchSpeed = 1;
 
     [Header("No Launch To Point")]
-    [SerializeField] private bool autoConfigureDistance = false;
+    [SerializeField] private bool autoConfigureDistance;
     [SerializeField] private float targetDistance = 3;
-    [SerializeField] private float targetFrequncy = 1;
+    [SerializeField] private float targetFrequency = 1;
 
     [HideInInspector] public Vector2 grapplePoint;
     [HideInInspector] public Vector2 grappleDistanceVector;
@@ -51,7 +51,7 @@ public class GrapplingGun : MonoBehaviour
     private void Start()
     {
         grappleRope.enabled = false;
-        m_springJoint2D.enabled = false;
+        springJoint2D.enabled = false;
 
     }
 
@@ -69,16 +69,16 @@ public class GrapplingGun : MonoBehaviour
             }
             else
             {
-                Vector2 mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
                 RotateGun(mousePos, true);
             }
 
             if (launchToPoint && grappleRope.isGrappling)
             {
-                if (launchType == LaunchType.Transform_Launch)
+                if (launchType == LaunchType.TransformLaunch)
                 {
-                    Vector2 firePointDistnace = firePoint.position - gunHolder.localPosition;
-                    Vector2 targetPos = grapplePoint - firePointDistnace;
+                    Vector2 firePointDistance = firePoint.position - gunHolder.localPosition;
+                    Vector2 targetPos = grapplePoint - firePointDistance;
                     gunHolder.position = Vector2.Lerp(gunHolder.position, targetPos, Time.deltaTime * launchSpeed);
                 }
             }
@@ -86,12 +86,12 @@ public class GrapplingGun : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             grappleRope.enabled = false;
-            m_springJoint2D.enabled = false;
-            m_rigidbody.gravityScale = 1;
+            springJoint2D.enabled = false;
+            rigidbody.gravityScale = 1;
         }
         else
         {
-            Vector2 mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
             RotateGun(mousePos, true);
         }
     }
@@ -113,15 +113,15 @@ public class GrapplingGun : MonoBehaviour
 
     void SetGrapplePoint()
     {
-        Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
+        Vector2 distanceVector = camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
         if (Physics2D.Raycast(firePoint.position, distanceVector.normalized))
         {
-            RaycastHit2D _hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);
-            if (_hit.transform.gameObject.layer == grappableLayerNumber || grappleToAll)
+            RaycastHit2D hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);
+            if (hit.transform.gameObject.layer == grappableLayerNumber || grappleToAll)
             {
-                if (Vector2.Distance(_hit.point, firePoint.position) <= maxDistnace || !hasMaxDistance)
+                if (Vector2.Distance(hit.point, firePoint.position) <= maxDistance || !hasMaxDistance)
                 {
-                    grapplePoint = _hit.point;
+                    grapplePoint = hit.point;
                     grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
                     grappleRope.enabled = true;
                 }
@@ -131,39 +131,39 @@ public class GrapplingGun : MonoBehaviour
 
     public void Grapple()
     {
-        m_springJoint2D.autoConfigureDistance = false;
+        springJoint2D.autoConfigureDistance = false;
         if (!launchToPoint && !autoConfigureDistance)
         {
-            m_springJoint2D.distance = targetDistance;
-            m_springJoint2D.frequency = targetFrequncy;
+            springJoint2D.distance = targetDistance;
+            springJoint2D.frequency = targetFrequency;
         }
         if (!launchToPoint)
         {
             if (autoConfigureDistance)
             {
-                m_springJoint2D.autoConfigureDistance = true;
-                m_springJoint2D.frequency = 0;
+                springJoint2D.autoConfigureDistance = true;
+                springJoint2D.frequency = 0;
             }
 
-            m_springJoint2D.connectedAnchor = grapplePoint;
-            m_springJoint2D.enabled = true;
+            springJoint2D.connectedAnchor = grapplePoint;
+            springJoint2D.enabled = true;
         }
         else
         {
             switch (launchType)
             {
-                case LaunchType.Physics_Launch:
-                    m_springJoint2D.connectedAnchor = grapplePoint;
+                case LaunchType.PhysicsLaunch:
+                    springJoint2D.connectedAnchor = grapplePoint;
 
                     Vector2 distanceVector = firePoint.position - gunHolder.position;
 
-                    m_springJoint2D.distance = distanceVector.magnitude;
-                    m_springJoint2D.frequency = launchSpeed;
-                    m_springJoint2D.enabled = true;
+                    springJoint2D.distance = distanceVector.magnitude;
+                    springJoint2D.frequency = launchSpeed;
+                    springJoint2D.enabled = true;
                     break;
-                case LaunchType.Transform_Launch:
-                    m_rigidbody.gravityScale = 0;
-                    m_rigidbody.velocity = Vector2.zero;
+                case LaunchType.TransformLaunch:
+                    rigidbody.gravityScale = 0;
+                    rigidbody.linearVelocity = Vector2.zero;
                     break;
             }
         }
@@ -174,8 +174,8 @@ public class GrapplingGun : MonoBehaviour
         if (firePoint != null && hasMaxDistance)
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(firePoint.position, maxDistnace);
+            Gizmos.DrawWireSphere(firePoint.position, maxDistance);
         }
     }
-
 }
+
