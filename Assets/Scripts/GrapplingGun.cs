@@ -45,6 +45,7 @@ public class GrapplingGun : MonoBehaviour
     [SerializeField] private float targetDistance = 3;
     [SerializeField] private float targetFrequency = 1;
 
+    [HideInInspector] public bool canGrapple = true;
     [HideInInspector] public Vector2 grapplePoint;
     [HideInInspector] public Vector2 grappleDistanceVector;
 
@@ -52,12 +53,11 @@ public class GrapplingGun : MonoBehaviour
     {
         grappleRope.enabled = false;
         springJoint2D.enabled = false;
-
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canGrapple)
         {
             SetGrapplePoint();
         }
@@ -65,12 +65,12 @@ public class GrapplingGun : MonoBehaviour
         {
             if (grappleRope.enabled)
             {
-                RotateGun(grapplePoint, false);
+                // RotateGun(grapplePoint, false);
             }
             else
             {
-                Vector2 mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
-                RotateGun(mousePos, true);
+                // Vector2 mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
+                // RotateGun(mousePos, true);
             }
 
             if (launchToPoint && grappleRope.isGrappling)
@@ -88,11 +88,6 @@ public class GrapplingGun : MonoBehaviour
             grappleRope.enabled = false;
             springJoint2D.enabled = false;
             rigidbody.gravityScale = 1;
-        }
-        else
-        {
-            Vector2 mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
-            RotateGun(mousePos, true);
         }
     }
 
