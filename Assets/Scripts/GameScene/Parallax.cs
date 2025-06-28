@@ -5,7 +5,7 @@ using Utils;
 
 public class ParallaxController : MonoBehaviour
 {
-    Transform cam => Helpers.cam.transform; //Main Camera
+    private Transform cam; //Main Camera
     Vector3 camStartPos;
     float distance; //jarak antara start camera posisi dan current posisi
 
@@ -19,8 +19,9 @@ public class ParallaxController : MonoBehaviour
     public float parallaxSpeed;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
+        cam = Helpers.cam.transform;
         camStartPos = cam.position;
 
         int backCount = transform.childCount;

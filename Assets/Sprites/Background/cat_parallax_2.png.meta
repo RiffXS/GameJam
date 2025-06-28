@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 53b1c0dca044df94385e06a8faa683f6
+guid: c5da05e733bae6946bc29baa929c9770
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3210158609618631756
-    second: cat_parallax_2_0
+      213: 1534201501636408269
+    second: cat_parallax_2 (1)_0
   - first:
-      213: -1643663954028321485
-    second: cat_parallax_2_1
+      213: -4785996540247990193
+    second: cat_parallax_2 (1)_1
   - first:
-      213: -7856191474733349457
-    second: cat_parallax_2_2
+      213: -8212095256492379100
+    second: cat_parallax_2 (1)_2
   - first:
-      213: -3220462565967067556
-    second: cat_parallax_2_3
+      213: -2411425291760481777
+    second: cat_parallax_2 (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat_parallax_2_0
+      name: cat_parallax_2 (1)_0
       rect:
         serializedVersion: 2
         x: 58
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4cfafe4f36cc8c20800000000000000
-      internalID: 3210158609618631756
+      spriteID: dc3b8ee13249a4510800000000000000
+      internalID: 1534201501636408269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_parallax_2_1
+      name: cat_parallax_2 (1)_1
       rect:
         serializedVersion: 2
         x: 6132
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3352702a7588039e0800000000000000
-      internalID: -1643663954028321485
+      spriteID: f4025420189b49db0800000000000000
+      internalID: -4785996540247990193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_parallax_2_2
+      name: cat_parallax_2 (1)_2
       rect:
         serializedVersion: 2
         x: 10640
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa501154a7339f290800000000000000
-      internalID: -7856191474733349457
+      spriteID: 424f91fafd6c80e80800000000000000
+      internalID: -8212095256492379100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat_parallax_2_3
+      name: cat_parallax_2 (1)_3
       rect:
         serializedVersion: 2
         x: 17312
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c560717eb5e9e43d0800000000000000
-      internalID: -3220462565967067556
+      spriteID: f0a49323975e88ed0800000000000000
+      internalID: -2411425291760481777
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cat_parallax_2_0: 3210158609618631756
-      cat_parallax_2_1: -1643663954028321485
-      cat_parallax_2_2: -7856191474733349457
-      cat_parallax_2_3: -3220462565967067556
+      cat_parallax_2 (1)_0: 1534201501636408269
+      cat_parallax_2 (1)_1: -4785996540247990193
+      cat_parallax_2 (1)_2: -8212095256492379100
+      cat_parallax_2 (1)_3: -2411425291760481777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
