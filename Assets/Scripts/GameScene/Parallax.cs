@@ -1,81 +1,69 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Utils;
 
-namespace GameScene
+public class ParallaxController : MonoBehaviour
 {
-    public class Parallax : MonoBehaviour
+    Transform cam => Helpers.cam.transform; //Main Camera
+    Vector3 camStartPos;
+    float distance; //jarak antara start camera posisi dan current posisi
+
+    GameObject[] backgrounds;
+    Material[] mat;
+    float[] backSpeed;
+
+    float farthestBack;
+
+    [Range(0.01f, 0.05f)]
+    public float parallaxSpeed;
+
+    // Start is called before the first frame update
+    void Awake()
     {
-        private float comprimentoX;
-        private float PosAtualX;
-        private Transform cam => Helpers.cam.transform;
-        [SerializeField] private float tempoParalaxe;
-        private float auxTimeParallax = 0f;
-        [SerializeField] private bool parallaxRodando;
+        camStartPos = cam.position;
 
-        void Awake()
+        int backCount = transform.childCount;
+        mat = new Material[backCount];
+        backSpeed = new float[backCount];
+        backgrounds = new GameObject[backCount];
+
+        for (int i = 0; i < backCount; i++)
         {
-            comprimentoX = GetComponent<SpriteRenderer>().bounds.size.x;
-            PosAtualX = transform.position.x;
-            parallaxRodando = false;
+            backgrounds[i] = transform.GetChild(i).gameObject;
+            mat[i] = backgrounds[i].GetComponent<Renderer>().material;
         }
 
-        private void MovimentoParalaxe(float tp)
+        BackSpeedCalculate(backCount);
+    }
+
+    void BackSpeedCalculate(int backCount)
+    {
+        for (int i = 0; i < backCount; i++) //find the farthest background
         {
-            PosAtualX -= tp * Time.deltaTime;
-            float rePos = cam.transform.position.x * (1 - tp);
-            float distancia = cam.transform.position.x * tp;
-
-            transform.position = new Vector3(PosAtualX + distancia, transform.position.y, transform.position.z);
-
-            if (rePos > PosAtualX + comprimentoX)
+            if((backgrounds[i].transform.position.z - cam.position.z) > farthestBack)
             {
-                PosAtualX += comprimentoX;
-            }
-            else if (rePos < PosAtualX - comprimentoX)
-            {
-                PosAtualX -= comprimentoX;
+                farthestBack = backgrounds[i].transform.position.z - cam.position.z;
             }
         }
 
-        public void MudarEstadoParallax(bool estado)
+        for (int i = 0; i < backCount; i++) //set the speed of bacground
         {
-            parallaxRodando = estado;
-            StopAllCoroutines();
-            if (parallaxRodando)
-            {
-                StartCoroutine(LigarParallax());
-            }
-            else
-            {
-                StartCoroutine(DesligarParallax());
-            }
-        }
-
-        IEnumerator LigarParallax()
-        {
-            while (auxTimeParallax < tempoParalaxe)
-            {
-                MovimentoParalaxe(auxTimeParallax);
-                auxTimeParallax += Time.deltaTime;
-                yield return null;
-            }
-
-            while (true)
-            {
-                MovimentoParalaxe(auxTimeParallax);
-                yield return null;
-            }
-        }
-
-        IEnumerator DesligarParallax()
-        {
-            while (auxTimeParallax > 0)
-            {
-                MovimentoParalaxe(auxTimeParallax);
-                auxTimeParallax -= Time.deltaTime;
-                yield return null;
-            }
+            backSpeed[i] = 1 - (backgrounds[i].transform.position.z - cam.position.z) / farthestBack;
         }
     }
+
+    private void LateUpdate()
+    {
+        distance = cam.position.x - camStartPos.x;
+        transform.position = new Vector3(cam.position.x, transform.position.y, 0);
+
+        for (int i = 0; i < backgrounds.Length; i++)
+        {
+            float speed = backSpeed[i] * parallaxSpeed;
+            mat[i].SetTextureOffset("_MainTex", new Vector2(distance, 0) * speed);
+        }
+    }
+
+    
 }
