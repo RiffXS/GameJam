@@ -8,7 +8,7 @@ public class BlackScreenController : DontDestroySingleton<BlackScreenController>
     [SerializeField] private GameObject _blackScreen_Panel;
     [SerializeField] private CanvasGroup _blackScreen_CanvasGroup;
 
-    private float _blackFadeTime = 0.3f;
+    private float _blackFadeTime => Utils.Helpers.BlackFadeTime;
 
     protected override void Awake()
     {

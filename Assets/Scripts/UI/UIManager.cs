@@ -1,16 +1,15 @@
 using UnityEngine;
+using Utils.Singleton;
 
-public class UIManager : MonoBehaviour
+namespace UI
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class UIManager : Singleton<UIManager>
     {
-        
-    }
+        [SerializeField] private GameObject enterInteraction;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void ControlEnterInteraction(bool active)
+        {
+            enterInteraction.SetActive(active);
+        }
     }
 }
