@@ -18,7 +18,7 @@ namespace GameScene
         private void Update()
         {
             if (!_playerInRange) return;
-            if (!Input.GetKeyDown(KeyCode.E)) return;
+            if (!Input.GetKeyDown(KeyCode.Return)) return;
             _playerTransform.position = destinationHouse.transform.position - new Vector3(0, yOffset, 0);
             _playerTransform.localScale = new Vector3((turnedToRight ? _playerTransform.localScale.x : -_playerTransform.localScale.x), _playerTransform.localScale.y, _playerTransform.localScale.z);
             _playerInRange = false;
