@@ -1,5 +1,7 @@
+using System;
 using Utils.Singleton;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +9,7 @@ public class BlackScreenController : DontDestroySingleton<BlackScreenController>
 {
     [SerializeField] private GameObject _blackScreen_Panel;
     [SerializeField] private CanvasGroup _blackScreen_CanvasGroup;
-
+    
     private float _blackFadeTime => Utils.Helpers.BlackFadeTime;
 
     protected override void Awake()
@@ -17,6 +19,18 @@ public class BlackScreenController : DontDestroySingleton<BlackScreenController>
         Time.timeScale = 1;
 
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void Update()
+    {
+        if (GameManager.I._gameStarted)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                RestartGame();
+                GameManager.I._gameStarted = false;
+            }
+        }
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -65,7 +79,11 @@ public class BlackScreenController : DontDestroySingleton<BlackScreenController>
     public void RestartGame()
     {
         _blackScreen_Panel.SetActive(true);
-        _blackScreen_CanvasGroup.DOFade(1, _blackFadeTime).OnComplete(() => SceneManager.LoadScene("Main")).SetUpdate(true);
+        _blackScreen_CanvasGroup.DOFade(1, _blackFadeTime).OnComplete(() =>
+        {
+            SceneManager.LoadScene("JessTest");
+            GameManager.I._gameStarted = true;
+        }).SetUpdate(true);
     }
 
     #endregion

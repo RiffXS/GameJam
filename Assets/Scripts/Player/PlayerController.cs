@@ -9,24 +9,23 @@ namespace Player
         [SerializeField] private PlayerObject[] playerObjects;
         
         [HideInInspector] public int currentTransformation;
-    
-        public void TransformTo(int transformation)
+        
+        protected override void Awake()
         {
-            StartCoroutine(Transformation(transformation));
-        }
-
-        private void Start()
-        {
+            base.Awake();
             for (var i = 0; i < playerObjects.Length; i++)
             {
                 playerObjects[i].gameObject.SetActive(i == currentTransformation);
             }
         }
+        
+        public void TransformTo(int transformation)
+        {
+            StartCoroutine(Transformation(transformation));
+        }
 
         private IEnumerator Transformation(int transformation)
         {
-            // eating sfx
-            
             playerObjects[currentTransformation].FreezePlayer(true);
             yield return new WaitForSeconds(2f);
             playerObjects[currentTransformation].FreezePlayer(false);

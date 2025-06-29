@@ -10,7 +10,7 @@ namespace Player
         public void FreezePlayer(bool freeze)
         {
             feetController.IsGrounded(!freeze);
-            if (freeze) rigidbody.linearVelocity = Vector2.zero;
+            rigidbody.simulated = !freeze;
         }
         
         private void Update()

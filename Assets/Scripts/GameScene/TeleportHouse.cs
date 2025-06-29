@@ -1,4 +1,5 @@
 using System.Collections;
+using Player;
 using UnityEngine;
 using Utils;
 using UI;
@@ -9,6 +10,7 @@ namespace GameScene
     {
         private bool _playerInRange;
         private Transform _playerTransform;
+        private PlayerObject _currentPlayer;
         [SerializeField] private GameObject destinationHouse;
         [SerializeField] private float yOffset = 0.1f;
         [SerializeField] private bool turnedToRight = true;
@@ -18,7 +20,8 @@ namespace GameScene
         
         private void Start()
         {
-            _playerTransform = GameObject.FindGameObjectWithTag("Player").transform.parent;
+            _currentPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerObject>();
+            _playerTransform = _currentPlayer.transform.parent;
         }
 
         private void Update()
@@ -32,7 +35,7 @@ namespace GameScene
 
         IEnumerator TeleportPlayer()
         {
-            _playerTransform.GetComponent<Rigidbody2D>().simulated = false;
+            _currentPlayer.FreezePlayer(true);
             _blackScreenController.FadeInBlack();
             yield return new WaitForSeconds(Helpers.BlackFadeTime);
             _playerTransform.localPosition = destinationHouse.transform.position - new Vector3(0, yOffset, 0);
@@ -40,7 +43,7 @@ namespace GameScene
             yield return new WaitForSeconds(Helpers.BlackFadeTime * 2);
             _blackScreenController.FadeOutBlack();
             yield return new WaitForSeconds(Helpers.BlackFadeTime);
-            _playerTransform.GetComponent<Rigidbody2D>().simulated = true;
+            _currentPlayer.FreezePlayer(false);
         }
         
         private void OnTriggerEnter2D(Collider2D other)

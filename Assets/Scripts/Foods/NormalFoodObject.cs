@@ -1,13 +1,16 @@
+using System.Collections;
 using Player;
+using UnityEngine;
 
 namespace Foods
 {
     public class NormalFoodObject : FoodObject
     {
-        protected override void PlayerEntered()
+        protected override IEnumerator EatFoodCoroutine()
         {
-            PlayerController player = PlayerController.I;
+            yield return new WaitForSeconds(2);
             
+            PlayerController player = PlayerController.I;
             player.TransformTo(player.currentTransformation + 1);
         
             Destroy(gameObject);
