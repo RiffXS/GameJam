@@ -1,0 +1,1222 @@
+fileFormatVersion: 2
+guid: 32efc7cafe6cba645b028f233c7ebe4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4866387868639188036
+    second: FreeDemoGreen_0
+  - first:
+      213: -1884908131968459858
+    second: FreeDemoGreen_1
+  - first:
+      213: -2317364416542122113
+    second: FreeDemoGreen_2
+  - first:
+      213: 3592968287285383193
+    second: FreeDemoGreen_3
+  - first:
+      213: 3043708038049185248
+    second: FreeDemoGreen_4
+  - first:
+      213: -6984288533899880659
+    second: FreeDemoGreen_5
+  - first:
+      213: -8129590421001375470
+    second: FreeDemoGreen_6
+  - first:
+      213: -5827690512084744206
+    second: FreeDemoGreen_7
+  - first:
+      213: 6436611158968504716
+    second: FreeDemoGreen_8
+  - first:
+      213: -4515793970226080782
+    second: FreeDemoGreen_9
+  - first:
+      213: 2560059418608066681
+    second: FreeDemoGreen_10
+  - first:
+      213: -7150285334593064521
+    second: FreeDemoGreen_11
+  - first:
+      213: 4564742237237795108
+    second: FreeDemoGreen_12
+  - first:
+      213: 6664227638758967675
+    second: FreeDemoGreen_13
+  - first:
+      213: 5947101375789673350
+    second: FreeDemoGreen_14
+  - first:
+      213: 8333933916314426330
+    second: FreeDemoGreen_15
+  - first:
+      213: 6955216986927313999
+    second: FreeDemoGreen_16
+  - first:
+      213: 3756487098320623467
+    second: FreeDemoGreen_17
+  - first:
+      213: -1734234027042761258
+    second: FreeDemoGreen_18
+  - first:
+      213: -3848885611905497986
+    second: FreeDemoGreen_19
+  - first:
+      213: 2764543892599508618
+    second: FreeDemoGreen_20
+  - first:
+      213: 9197356466330938158
+    second: FreeDemoGreen_21
+  - first:
+      213: 3078631178162960172
+    second: FreeDemoGreen_22
+  - first:
+      213: -5796360767255884303
+    second: FreeDemoGreen_23
+  - first:
+      213: 4022511256547295558
+    second: FreeDemoGreen_24
+  - first:
+      213: 2695413945134341889
+    second: FreeDemoGreen_25
+  - first:
+      213: -8353020256175823392
+    second: FreeDemoGreen_26
+  - first:
+      213: -4347406343173803555
+    second: FreeDemoGreen_27
+  - first:
+      213: -6015697910556081918
+    second: FreeDemoGreen_28
+  - first:
+      213: 6294516426210005996
+    second: FreeDemoGreen_29
+  - first:
+      213: -1251732229590761434
+    second: FreeDemoGreen_30
+  - first:
+      213: -6384742448502355491
+    second: FreeDemoGreen_31
+  - first:
+      213: -1299857955722330159
+    second: FreeDemoGreen_32
+  - first:
+      213: -6683890423923314902
+    second: FreeDemoGreen_33
+  - first:
+      213: 4895731981487136371
+    second: FreeDemoGreen_34
+  - first:
+      213: 8016004689978555416
+    second: FreeDemoGreen_35
+  - first:
+      213: 8082597557068205796
+    second: FreeDemoGreen_36
+  - first:
+      213: -5287163012313723573
+    second: FreeDemoGreen_37
+  - first:
+      213: 2912706414740305825
+    second: FreeDemoGreen_38
+  - first:
+      213: -2859251287073016533
+    second: FreeDemoGreen_39
+  - first:
+      213: -4820678551559082610
+    second: FreeDemoGreen_40
+  - first:
+      213: 2823312868589763946
+    second: FreeDemoGreen_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FreeDemoGreen_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 167
+        width: 112
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4445289bbf1e88340800000000000000
+      internalID: 4866387868639188036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 223
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab56c76a0677d5e0800000000000000
+      internalID: -1884908131968459858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_2
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 144
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f50e0575117dfd0800000000000000
+      internalID: -2317364416542122113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 178
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91093e4fe99ccd130800000000000000
+      internalID: 3592968287285383193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 175
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed3ce7955c6d3a20800000000000000
+      internalID: 3043708038049185248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2750103592d21f90800000000000000
+      internalID: -6984288533899880659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 135
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2117bc2a594ed2f80800000000000000
+      internalID: -8129590421001375470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 135
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7464e0b52ef1fa0800000000000000
+      internalID: -5827690512084744206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 143
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8112a71fbf635950800000000000000
+      internalID: 6436611158968504716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 127
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3d2dd4f4da451c0800000000000000
+      internalID: -4515793970226080782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 118
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970e60a3a78278320800000000000000
+      internalID: 2560059418608066681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 126
+        width: 45
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b135ec3f5515cc90800000000000000
+      internalID: -7150285334593064521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_12
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 110
+        width: 45
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429d7c531e8395f30800000000000000
+      internalID: 4564742237237795108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7981969ab71c7c50800000000000000
+      internalID: 6664227638758967675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b2e233139588250800000000000000
+      internalID: 5947101375789673350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_15
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 86
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb5087edb418a370800000000000000
+      internalID: 8333933916314426330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 86
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44b091dff4e58060800000000000000
+      internalID: 6955216986927313999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_17
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 80
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b671dbafc19b12430800000000000000
+      internalID: 3756487098320623467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_18
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 95
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d598bc3753cee7e0800000000000000
+      internalID: -1734234027042761258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_19
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 80
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e74c241ade2069ac0800000000000000
+      internalID: -3848885611905497986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 80
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e8e5ce502ad5620800000000000000
+      internalID: 2764543892599508618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_21
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 95
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b2c48f9f293af70800000000000000
+      internalID: 9197356466330938158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_22
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 48
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2778d8cebe79ba20800000000000000
+      internalID: 3078631178162960172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_23
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 48
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fdc3b5b7903f8fa0800000000000000
+      internalID: -5796360767255884303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6410387fca4d2d730800000000000000
+      internalID: 4022511256547295558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 82
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fdd52c3b8086520800000000000000
+      internalID: 2695413945134341889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_26
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 51
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e56ffc455c141c80800000000000000
+      internalID: -8353020256175823392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_27
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 53
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd178d4e6f8eaa3c0800000000000000
+      internalID: -4347406343173803555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_28
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 53
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201ce357f92f38ca0800000000000000
+      internalID: -6015697910556081918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_29
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 64
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3db11075d9a5750800000000000000
+      internalID: 6294516426210005996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_30
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 64
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620c55d4b24f0aee0800000000000000
+      internalID: -1251732229590761434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_31
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 64
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9c8a62296d467a0800000000000000
+      internalID: -6384742448502355491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_32
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 48
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df74b2831af5fde0800000000000000
+      internalID: -1299857955722330159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_33
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 48
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f6a6c721d0e33a0800000000000000
+      internalID: -6683890423923314902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_34
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 48
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e5f086c4221f340800000000000000
+      internalID: 4895731981487136371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_35
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c79008bc19e3f60800000000000000
+      internalID: 8016004689978555416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_36
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee8d7b97a72b2070800000000000000
+      internalID: 8082597557068205796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_37
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4dc47db04930a6b0800000000000000
+      internalID: -5287163012313723573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_38
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7f8915d030c6820800000000000000
+      internalID: 2912706414740305825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_39
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b253f667a16e158d0800000000000000
+      internalID: -2859251287073016533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_40
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8de9fdf562891db0800000000000000
+      internalID: -4820678551559082610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreeDemoGreen_41
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6df41e681c6e2720800000000000000
+      internalID: 2823312868589763946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FreeDemoGreen_0: 4866387868639188036
+      FreeDemoGreen_1: -1884908131968459858
+      FreeDemoGreen_10: 2560059418608066681
+      FreeDemoGreen_11: -7150285334593064521
+      FreeDemoGreen_12: 4564742237237795108
+      FreeDemoGreen_13: 6664227638758967675
+      FreeDemoGreen_14: 5947101375789673350
+      FreeDemoGreen_15: 8333933916314426330
+      FreeDemoGreen_16: 6955216986927313999
+      FreeDemoGreen_17: 3756487098320623467
+      FreeDemoGreen_18: -1734234027042761258
+      FreeDemoGreen_19: -3848885611905497986
+      FreeDemoGreen_2: -2317364416542122113
+      FreeDemoGreen_20: 2764543892599508618
+      FreeDemoGreen_21: 9197356466330938158
+      FreeDemoGreen_22: 3078631178162960172
+      FreeDemoGreen_23: -5796360767255884303
+      FreeDemoGreen_24: 4022511256547295558
+      FreeDemoGreen_25: 2695413945134341889
+      FreeDemoGreen_26: -8353020256175823392
+      FreeDemoGreen_27: -4347406343173803555
+      FreeDemoGreen_28: -6015697910556081918
+      FreeDemoGreen_29: 6294516426210005996
+      FreeDemoGreen_3: 3592968287285383193
+      FreeDemoGreen_30: -1251732229590761434
+      FreeDemoGreen_31: -6384742448502355491
+      FreeDemoGreen_32: -1299857955722330159
+      FreeDemoGreen_33: -6683890423923314902
+      FreeDemoGreen_34: 4895731981487136371
+      FreeDemoGreen_35: 8016004689978555416
+      FreeDemoGreen_36: 8082597557068205796
+      FreeDemoGreen_37: -5287163012313723573
+      FreeDemoGreen_38: 2912706414740305825
+      FreeDemoGreen_39: -2859251287073016533
+      FreeDemoGreen_4: 3043708038049185248
+      FreeDemoGreen_40: -4820678551559082610
+      FreeDemoGreen_41: 2823312868589763946
+      FreeDemoGreen_5: -6984288533899880659
+      FreeDemoGreen_6: -8129590421001375470
+      FreeDemoGreen_7: -5827690512084744206
+      FreeDemoGreen_8: 6436611158968504716
+      FreeDemoGreen_9: -4515793970226080782
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
