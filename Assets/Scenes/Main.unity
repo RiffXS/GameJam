@@ -274,9 +274,9 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.000076293945
-      inSlope: -0.3701491
-      outSlope: -0.3701491
+      value: 0
+      inSlope: -0.36950442
+      outSlope: -0.36950442
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
@@ -284,8 +284,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0.1183469
       value: -0.043729704
-      inSlope: 0.08946027
-      outSlope: 0.08946027
+      inSlope: 0.08978261
+      outSlope: 0.08978261
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -320,17 +320,17 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0.85759526
       value: -0.009029247
-      inSlope: -0.308492
-      outSlope: -0.308492
+      inSlope: -0.3087599
+      outSlope: -0.3087599
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 0.000076293945
-      inSlope: 0.06394128
-      outSlope: 0.06394128
+      value: 0
+      inSlope: 0.06340552
+      outSlope: 0.06340552
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -808,7 +808,7 @@ Transform:
   m_GameObject: {fileID: 303038112}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.045, y: -0.19, z: 0}
+  m_LocalPosition: {x: 0.045, y: 0.077, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -979,7 +979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2, y: 1.3699999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1162,8 +1162,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 265192082}
-  - {fileID: 1948336024}
   - {fileID: 1137586126}
+  - {fileID: 1948336024}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &802187990
@@ -1443,7 +1443,7 @@ Transform:
   m_GameObject: {fileID: 1037615298}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2722, y: 0.02, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.020000001, y: 0.024672782, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1465,19 +1465,18 @@ MonoBehaviour:
   grappleRope: {fileID: 203718890}
   grappleToAll: 0
   grappableLayerNumber: 6
-  camera: {fileID: 519420031}
   gunHolder: {fileID: 267653518}
   gunPivot: {fileID: 303038113}
   firePoint: {fileID: 423719646}
   springJoint2D: {fileID: 267653515}
   rigidbody: {fileID: 267653516}
   rotateOverTime: 1
-  rotationSpeed: 17.6
+  rotationSpeed: 15
   hasMaxDistance: 0
   maxDistance: 20
   launchToPoint: 1
   launchType: 1
-  launchSpeed: 0.5
+  launchSpeed: 0.45
   autoConfigureDistance: 0
   targetDistance: 3
   targetFrequency: 1
@@ -1598,7 +1597,7 @@ GameObject:
   - component: {fileID: 1137586124}
   m_Layer: 6
   m_Name: Ground (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1945,7 +1944,7 @@ GameObject:
   - component: {fileID: 1948336022}
   m_Layer: 6
   m_Name: Ground (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

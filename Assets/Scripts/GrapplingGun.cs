@@ -1,4 +1,6 @@
+using Unity.Burst;
 using UnityEngine;
+using Utils;
 
 public class GrapplingGun : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class GrapplingGun : MonoBehaviour
     [SerializeField] private int grappableLayerNumber = 9;
 
     [Header("Main Camera:")]
-    public new Camera camera;
+    Camera cam => Helpers.cam;
 
     [Header("Transform Ref:")]
     public Transform gunHolder;
@@ -108,7 +110,7 @@ public class GrapplingGun : MonoBehaviour
 
     void SetGrapplePoint()
     {
-        Vector2 distanceVector = camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
+        Vector2 distanceVector = cam.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
         if (Physics2D.Raycast(firePoint.position, distanceVector.normalized))
         {
             RaycastHit2D hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);

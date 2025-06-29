@@ -61,7 +61,7 @@ public class GrapplingRope : MonoBehaviour
     {
         if (!_straightLine)
         {
-            if (Mathf.Abs(lineRenderer.GetPosition(precision - 1).x - grapplingGun.grapplePoint.x) <= 0.02)
+            if (Mathf.Abs(lineRenderer.GetPosition(precision - 1).x - grapplingGun.grapplePoint.x) <= 0.04)
             {
                 _straightLine = true;
             }
