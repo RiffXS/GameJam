@@ -220,3 +220,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallWait: 2
   destroyWait: 1
+  spriteRenderer: {fileID: 3359370151931262068}

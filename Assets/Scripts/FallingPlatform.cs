@@ -1,12 +1,13 @@
-using System;
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
 public class FallingPlatform : MonoBehaviour
 {
-    public float fallWait = 2f;
-    public float destroyWait = 1f;
-
+    [SerializeField]  float fallWait = 2f;
+    [SerializeField]  float destroyWait = 1f;
+    [SerializeField] SpriteRenderer spriteRenderer;
+    
     private bool _isFalling;
     private Rigidbody2D _rigidbody2D;
     
@@ -27,8 +28,8 @@ public class FallingPlatform : MonoBehaviour
     {
         _isFalling = true;
         yield return new WaitForSeconds(fallWait);
+        spriteRenderer.DOFade(0, destroyWait).OnComplete(()=>Destroy(gameObject, destroyWait));
         _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-        Destroy(gameObject, destroyWait);
     }
 
     public void Fall()
