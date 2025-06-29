@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: dd27266a0ff5be64b91a92b8b1ba50d4
+guid: 780fa3c7f5e85ab43802e6f4bfa85746
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7907241379582535822
-    second: CatBowls_0
-  - first:
-      213: 4400429897995587122
-    second: CatBowls_1
+      213: -7184453141422777021
+    second: On (32x10)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CatBowls_0
+      name: On (32x10)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 15
-        width: 16
-        height: 16
+        y: 0
+        width: 32
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,42 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27796b01cd5d34290800000000000000
-      internalID: -7907241379582535822
+      spriteID: 34d5e08cee1bb4c90800000000000000
+      internalID: -7184453141422777021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatBowls_2
+      name: On (32x10)_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23e09018da7711d30800000000000000
-      internalID: 4400429897995587122
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CatBowls_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 15
-        width: 16
-        height: 16
+        width: 32
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b10aa9d082a295940a2999f4b8c5d98d
-      internalID: 1600704932
+      spriteID: 4966703883b3aec4b8a314c905b45edf
+      internalID: 963980427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatBowls_3
+      name: On (32x10)_2
       rect:
         serializedVersion: 2
-        x: 16
+        x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,8 +159,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 821c0a1b91a158549900ddefdda44239
-      internalID: 2099998761
+      spriteID: 780b5a7993ec01e46a4a8945b8209d9f
+      internalID: -1000212953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: On (32x10)_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78659ae6dab997f469f12e22a0a7aa60
+      internalID: -730695742
       vertices: []
       indices: 
       edges: []
@@ -207,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ce67ca44b004e0446932c234960b9d55
+    spriteID: b811d9bc8ee56404b8fc67a0862415d6
     internalID: 0
     vertices: []
     indices: 
@@ -217,10 +201,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CatBowls_0: -7907241379582535822
-      CatBowls_1: 1600704932
-      CatBowls_2: 4400429897995587122
-      CatBowls_3: 2099998761
+      On (32x10)_1: 963980427
+      On (32x10)_2: -1000212953
+      On (32x10)_3: -730695742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

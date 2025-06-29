@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 
 public class FeetController : MonoBehaviour
@@ -12,7 +12,7 @@ public class FeetController : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ground"))
+        if (other.CompareTag("Ground") || other.CompareTag("FallingPlatform"))
         {
             IsGrounded(true);
         }
