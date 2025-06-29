@@ -20,7 +20,7 @@ public class TeleportHouse : MonoBehaviour
     {
         if (playerInRange)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 playerTransform.position = destinationHouse.transform.position - new Vector3(0, yOffset, 0);
                 playerTransform.localScale = new Vector3((turnedToRight ? playerTransform.localScale.x : -playerTransform.localScale.x), playerTransform.localScale.y, playerTransform.localScale.z);
@@ -29,7 +29,7 @@ public class TeleportHouse : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -37,7 +37,7 @@ public class TeleportHouse : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
