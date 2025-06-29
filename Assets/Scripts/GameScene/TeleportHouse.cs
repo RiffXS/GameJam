@@ -4,35 +4,31 @@ namespace GameScene
 {
     public class TeleportHouse : MonoBehaviour
     {
-        private bool playerInRange;
-        private Transform playerTransform;
+        private bool _playerInRange;
+        private Transform _playerTransform;
         [SerializeField] private GameObject destinationHouse;
         [SerializeField] private float yOffset = 0.1f;
         [SerializeField] private bool turnedToRight = true;
 
         private void Start()
         {
-            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+            _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
         private void Update()
         {
-            if (playerInRange)
-            {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    playerTransform.position = destinationHouse.transform.position - new Vector3(0, yOffset, 0);
-                    playerTransform.localScale = new Vector3((turnedToRight ? playerTransform.localScale.x : -playerTransform.localScale.x), playerTransform.localScale.y, playerTransform.localScale.z);
-                    playerInRange = false;
-                }
-            }
+            if (!_playerInRange) return;
+            if (!Input.GetKeyDown(KeyCode.E)) return;
+            _playerTransform.position = destinationHouse.transform.position - new Vector3(0, yOffset, 0);
+            _playerTransform.localScale = new Vector3((turnedToRight ? _playerTransform.localScale.x : -_playerTransform.localScale.x), _playerTransform.localScale.y, _playerTransform.localScale.z);
+            _playerInRange = false;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
-                playerInRange = true;
+                _playerInRange = true;
             }
         }
 
@@ -40,7 +36,7 @@ namespace GameScene
         {
             if (other.CompareTag("Player"))
             {
-                playerInRange = false;
+                _playerInRange = false;
             }
         }
     }

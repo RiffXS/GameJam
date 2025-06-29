@@ -14,7 +14,7 @@ namespace GameScene.GrapplingHook
         [SerializeField] private int grappableLayerNumber = 9;
 
         [Header("Main Camera:")]
-        Camera cam => Helpers.cam;
+        private Camera Cam => Helpers.Cam;
 
         [Header("Transform Ref:")]
         public Transform gunHolder;
@@ -68,16 +68,6 @@ namespace GameScene.GrapplingHook
             }
             else if (Input.GetKey(KeyCode.Mouse0))
             {
-                if (grappleRope.enabled)
-                {
-                    // RotateGun(grapplePoint, false);
-                }
-                else
-                {
-                    // Vector2 mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
-                    // RotateGun(mousePos, true);
-                }
-
                 if (launchToPoint && grappleRope.isGrappling)
                 {
                     if (launchType == LaunchType.TransformLaunch)
@@ -98,24 +88,9 @@ namespace GameScene.GrapplingHook
             }
         }
 
-        void RotateGun(Vector3 lookPoint, bool allowRotationOverTime)
-        {
-            Vector3 distanceVector = lookPoint - gunPivot.position;
-
-            float angle = Mathf.Atan2(distanceVector.y, distanceVector.x) * Mathf.Rad2Deg;
-            if (rotateOverTime && allowRotationOverTime)
-            {
-                gunPivot.rotation = Quaternion.Lerp(gunPivot.rotation, Quaternion.AngleAxis(angle, Vector3.forward), Time.deltaTime * rotationSpeed);
-            }
-            else
-            {
-                gunPivot.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            }
-        }
-
         void SetGrapplePoint()
         {
-            Vector2 distanceVector = cam.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
+            Vector2 distanceVector = Cam.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
             if (Physics2D.Raycast(firePoint.position, distanceVector.normalized))
             {
                 RaycastHit2D hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);

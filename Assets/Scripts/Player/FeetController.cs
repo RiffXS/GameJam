@@ -7,7 +7,7 @@ namespace Player
     {
         [SerializeField] GrapplingGun grapplingGun;
 
-        void IsGrounded(bool grounded)
+        private void IsGrounded(bool grounded)
         {
             grapplingGun.canGrapple = grounded;
         }

@@ -4,7 +4,7 @@ namespace Player
 {
     public class PlayerObject : MonoBehaviour
     {
-        void Update()
+        private void Update()
         {
             gameObject.transform.parent.transform.position = gameObject.transform.position;
         }

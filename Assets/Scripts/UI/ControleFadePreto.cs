@@ -8,11 +8,11 @@ namespace UI
 {
     public class ControleFadePreto : Singleton<ControleFadePreto>
     {
-        [SerializeField] public GameObject TelaPretaPanel;
-        [SerializeField] public CanvasGroup cg_TelaPreta;
-        private bool restart;
+        [SerializeField] public GameObject telaPretaPanel;
+        [SerializeField] public CanvasGroup cgTelaPreta;
+        private bool _restart;
 
-        private float tempoFadePreto => Helpers.tempoPretoFade;
+        private float TempoFadePreto => Helpers.TempoPretoFade;
         //private AudioManager _audioManager => AudioManager.I;
 
         protected override void Awake()
@@ -27,30 +27,30 @@ namespace UI
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             FadeInSceneStart();
-            if (restart)
+            if (_restart)
             {
                 //_audioManager.FadeInMusic("Main");
-                restart = false;
+                _restart = false;
             }
         }
 
         public void FadeInSceneStart()
         {
-            TelaPretaPanel.SetActive(true);
-            cg_TelaPreta.alpha = 1f;
-            cg_TelaPreta.DOFade(0, tempoFadePreto).onComplete = () => TelaPretaPanel.SetActive(false);
+            telaPretaPanel.SetActive(true);
+            cgTelaPreta.alpha = 1f;
+            cgTelaPreta.DOFade(0, TempoFadePreto).onComplete = () => telaPretaPanel.SetActive(false);
         }
 
         public void FadeOutScene(string nomeScene)
         {
-            TelaPretaPanel.SetActive(true);
-            cg_TelaPreta.DOFade(1, tempoFadePreto).OnComplete(() => SceneManager.LoadScene(nomeScene)).SetUpdate(true);
+            telaPretaPanel.SetActive(true);
+            cgTelaPreta.DOFade(1, TempoFadePreto).OnComplete(() => SceneManager.LoadScene(nomeScene)).SetUpdate(true);
         }
 
         public void FadePanel(GameObject panel, bool estado)
         {
-            TelaPretaPanel.SetActive(true);
-            cg_TelaPreta.DOFade(1, tempoFadePreto).onComplete = () => { 
+            telaPretaPanel.SetActive(true);
+            cgTelaPreta.DOFade(1, TempoFadePreto).onComplete = () => { 
                 panel.SetActive(estado); 
                 FadeInSceneStart(); 
             };
@@ -58,9 +58,9 @@ namespace UI
 
         public void RestartStraightGame()
         {
-            TelaPretaPanel.SetActive(true);
-            cg_TelaPreta.DOFade(1, tempoFadePreto).OnComplete(() => {
-                restart = true;
+            telaPretaPanel.SetActive(true);
+            cgTelaPreta.DOFade(1, TempoFadePreto).OnComplete(() => {
+                _restart = true;
                 SceneManager.LoadScene("Main");
             
             }).SetUpdate(true);

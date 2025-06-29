@@ -6,9 +6,9 @@ namespace GameScene
 {
     public class FallingPlatform : MonoBehaviour
     {
-        [SerializeField]  float fallWait = 2f;
-        [SerializeField]  float destroyWait = 1f;
-        [SerializeField] SpriteRenderer spriteRenderer;
+        [SerializeField] private float fallWait = 2f;
+        [SerializeField] private float destroyWait = 1f;
+        [SerializeField] private SpriteRenderer spriteRenderer;
     
         private bool _isFalling;
         private Rigidbody2D _rigidbody2D;
