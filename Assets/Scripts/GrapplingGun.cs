@@ -50,6 +50,7 @@ public class GrapplingGun : MonoBehaviour
     [HideInInspector] public bool canGrapple = true;
     [HideInInspector] public Vector2 grapplePoint;
     [HideInInspector] public Vector2 grappleDistanceVector;
+    private FallingPlatform _fallingPlatform = null;
 
     private void Start()
     {
@@ -90,6 +91,8 @@ public class GrapplingGun : MonoBehaviour
             grappleRope.enabled = false;
             springJoint2D.enabled = false;
             rigidbody.gravityScale = 1;
+            _fallingPlatform?.Fall();
+            _fallingPlatform = null;
         }
     }
 
@@ -114,13 +117,19 @@ public class GrapplingGun : MonoBehaviour
         if (Physics2D.Raycast(firePoint.position, distanceVector.normalized))
         {
             RaycastHit2D hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);
-            if (hit.transform.gameObject.layer == grappableLayerNumber || grappleToAll)
+            GameObject hitGameObject = hit.transform.gameObject;
+            if (hitGameObject.layer == grappableLayerNumber || grappleToAll)
             {
                 if (Vector2.Distance(hit.point, firePoint.position) <= maxDistance || !hasMaxDistance)
                 {
                     grapplePoint = hit.point;
                     grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
                     grappleRope.enabled = true;
+                    
+                    if (hitGameObject.CompareTag("FallingPlatform"))
+                    {
+                        _fallingPlatform = hitGameObject.GetComponent<FallingPlatform>();
+                    }
                 }
             }
         }
