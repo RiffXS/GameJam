@@ -20,23 +20,21 @@ public class PlayerController : MonoBehaviour
     
     public void Transformation(int transformation)
     {
-        for (int i = 0; i < playerObjects.Length; i++)
-        {
-            if (i == transformation)
-            {
-                playerObjects[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                playerObjects[i].gameObject.SetActive(false);
-            }
-        }
+        Debug.Log(transformation + " " + currentTransformation);
+        playerObjects[transformation].transform.position = playerObjects[currentTransformation].transform.position;
+        playerObjects[transformation].gameObject.SetActive(false);
+        playerObjects[currentTransformation].gameObject.SetActive(true);
+        currentTransformation = transformation;
     }
 
 // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Transformation(currentTransformation);
+        for (int i = 0; i < playerObjects.Length; i++)
+        {
+            if (i == currentTransformation) playerObjects[i].gameObject.SetActive(true);
+            else playerObjects[i].gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame

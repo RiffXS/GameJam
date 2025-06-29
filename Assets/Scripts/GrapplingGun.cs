@@ -50,7 +50,7 @@ public class GrapplingGun : MonoBehaviour
     [HideInInspector] public bool canGrapple = true;
     [HideInInspector] public Vector2 grapplePoint;
     [HideInInspector] public Vector2 grappleDistanceVector;
-    private FallingPlatform _fallingPlatform = null;
+    private FallingPlatform _fallingPlatform;
 
     private void Start()
     {
@@ -163,7 +163,6 @@ public class GrapplingGun : MonoBehaviour
 
                     Vector2 distanceVector = firePoint.position - gunHolder.position;
 
-                    springJoint2D.distance = distanceVector.magnitude;
                     springJoint2D.frequency = launchSpeed;
                     springJoint2D.enabled = true;
                     break;
