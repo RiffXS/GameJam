@@ -1,47 +1,47 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class TeleportHouse : MonoBehaviour
+namespace GameScene
 {
-    private bool playerInRange;
-    private Transform playerTransform;
-    [SerializeField] private GameObject destinationHouse;
-    [SerializeField] private float yOffset = 0.1f;
-    [SerializeField] private bool turnedToRight = true;
-
-    private void Start()
+    public class TeleportHouse : MonoBehaviour
     {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-    }
+        private bool playerInRange;
+        private Transform playerTransform;
+        [SerializeField] private GameObject destinationHouse;
+        [SerializeField] private float yOffset = 0.1f;
+        [SerializeField] private bool turnedToRight = true;
 
-    private void Update()
-    {
-        if (playerInRange)
+        private void Start()
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+
+        private void Update()
+        {
+            if (playerInRange)
             {
-                playerTransform.position = destinationHouse.transform.position - new Vector3(0, yOffset, 0);
-                playerTransform.localScale = new Vector3((turnedToRight ? playerTransform.localScale.x : -playerTransform.localScale.x), playerTransform.localScale.y, playerTransform.localScale.z);
-                playerInRange = false;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    playerTransform.position = destinationHouse.transform.position - new Vector3(0, yOffset, 0);
+                    playerTransform.localScale = new Vector3((turnedToRight ? playerTransform.localScale.x : -playerTransform.localScale.x), playerTransform.localScale.y, playerTransform.localScale.z);
+                    playerInRange = false;
+                }
             }
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            playerInRange = true;
+            if (other.CompareTag("Player"))
+            {
+                playerInRange = true;
+            }
         }
-    }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
+        private void OnTriggerExit2D(Collider2D other)
         {
-            playerInRange = false;
+            if (other.CompareTag("Player"))
+            {
+                playerInRange = false;
+            }
         }
     }
 }

@@ -1,25 +1,28 @@
-using System.Collections;
+using GameScene.GrapplingHook;
 using UnityEngine;
 
-public class FeetController : MonoBehaviour
+namespace Player
 {
-    [SerializeField] GrapplingGun grapplingGun;
+    public class FeetController : MonoBehaviour
+    {
+        [SerializeField] GrapplingGun grapplingGun;
 
-    void IsGrounded(bool grounded)
-    {
-        grapplingGun.canGrapple = grounded;
-    }
-    
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Ground") || other.CompareTag("FallingPlatform"))
+        void IsGrounded(bool grounded)
         {
-            IsGrounded(true);
+            grapplingGun.canGrapple = grounded;
         }
-    }
+    
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("Ground") || other.CompareTag("FallingPlatform"))
+            {
+                IsGrounded(true);
+            }
+        }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        IsGrounded(false);
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            IsGrounded(false);
+        }
     }
 }

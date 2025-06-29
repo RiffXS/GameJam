@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class PlayerObject : MonoBehaviour
+namespace Player
 {
-    void Update()
+    public class PlayerObject : MonoBehaviour
     {
-        gameObject.transform.parent.transform.position = gameObject.transform.position;
+        void Update()
+        {
+            gameObject.transform.parent.transform.position = gameObject.transform.position;
+        }
     }
 }

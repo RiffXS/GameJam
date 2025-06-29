@@ -3315,9 +3315,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1561582915}
-  - component: {fileID: 1561582916}
   - component: {fileID: 1561582918}
   - component: {fileID: 1561582917}
+  - component: {fileID: 1561582916}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -5398,7 +5398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9104674341383800518, guid: f2b701eb8ff567d468655bc6902aa99c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.11
+      value: 2.73
       objectReference: {fileID: 0}
     - target: {fileID: 9104674341383800518, guid: f2b701eb8ff567d468655bc6902aa99c, type: 3}
       propertyPath: m_LocalPosition.y
