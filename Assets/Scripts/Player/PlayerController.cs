@@ -1,24 +1,12 @@
 using UnityEngine;
+using Utils.Singleton;
 
 namespace Player
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : Singleton<PlayerController>
     {
-        public static PlayerController Instance { get; private set; }
-    
         [SerializeField] private PlayerObject[] playerObjects;
         [HideInInspector] public int currentTransformation;
-    
-        private void Awake()
-        {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            Instance = this;
-        }
     
         public void Transformation(int transformation)
         {

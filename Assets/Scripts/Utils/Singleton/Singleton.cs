@@ -7,30 +7,32 @@ namespace Utils.Singleton
     /// </summary>
     public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
-        protected static T _instance;
+        protected static T Instance;
         public static T I
         {
             get
             {
-                if (_instance == null)
+                if (Instance == null)
                 {
-                    _instance = FindObjectOfType<T>();
-                    if (_instance == null)
+                    Instance = FindFirstObjectByType<T>();
+                    if (Instance == null)
                     {
-                        GameObject obj = new GameObject();
-                        obj.name = typeof(T).Name;
-                        _instance = obj.AddComponent<T>();
+                        GameObject obj = new GameObject
+                        {
+                            name = typeof(T).Name
+                        };
+                        Instance = obj.AddComponent<T>();
                     }
                 }
-                return _instance;
+                return Instance;
             }
         }
 
         protected virtual void Awake()
         {
-            if (_instance == null)
+            if (Instance == null)
             {
-                _instance = this as T;
+                Instance = this as T;
             }
             else
             {

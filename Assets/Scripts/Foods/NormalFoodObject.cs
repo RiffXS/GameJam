@@ -7,7 +7,7 @@ namespace Foods
     {
         protected override void PlayerEntered()
         {
-            PlayerController player = PlayerController.Instance;
+            PlayerController player = PlayerController.I;
             
             player.Transformation(player.currentTransformation + 1);
         

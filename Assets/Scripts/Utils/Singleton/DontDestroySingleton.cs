@@ -11,7 +11,7 @@ namespace Utils.Singleton
         {
             base.Awake();
             transform.SetParent(null, true);
-            if (_instance == this as T)
+            if (Instance == this as T)
             {
                 DontDestroyOnLoad(this.gameObject);
             }

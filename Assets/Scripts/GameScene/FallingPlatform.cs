@@ -12,8 +12,8 @@ namespace GameScene
     
         private bool _isFalling;
         private Rigidbody2D _rigidbody2D;
-    
-        void Start()
+
+        private void Start()
         {
             _rigidbody2D = GetComponent<Rigidbody2D>();
         }

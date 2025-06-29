@@ -2406,9 +2406,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5533837784247419354}
-  - component: {fileID: 8944827610916836681}
   - component: {fileID: 2922049840256945411}
   - component: {fileID: 8612887687982738332}
+  - component: {fileID: 8944827610916836681}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -2436,25 +2436,6 @@ Transform:
   - {fileID: 4117750350581387049}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8944827610916836681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5022338427186312634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01183f6c41237ea40a7947cf5d2a6e55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerObjects:
-  - {fileID: 5210049962687324054}
-  - {fileID: 5542291366858227878}
-  - {fileID: 6148099468198573409}
-  - {fileID: 3690830981547884323}
-  - {fileID: 3947077989244543312}
-  currentTransformation: 0
 --- !u!50 &2922049840256945411
 Rigidbody2D:
   serializedVersion: 5
@@ -2500,9 +2481,28 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 0
-  m_Distance: 1.3
-  m_DampingRatio: 0.8
+  m_Distance: 0.9
+  m_DampingRatio: 0.76
   m_Frequency: 1
+--- !u!114 &8944827610916836681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5022338427186312634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01183f6c41237ea40a7947cf5d2a6e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObjects:
+  - {fileID: 5210049962687324054}
+  - {fileID: 5542291366858227878}
+  - {fileID: 6148099468198573409}
+  - {fileID: 3690830981547884323}
+  - {fileID: 3947077989244543312}
+  currentTransformation: 0
 --- !u!1 &5472250423599598560
 GameObject:
   m_ObjectHideFlags: 0

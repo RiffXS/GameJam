@@ -165,7 +165,7 @@ namespace GameScene.GrapplingHook
 
                         Vector2 distanceVector = firePoint.position - (Vector3)grapplePoint;
 
-                        var player = PlayerController.Instance;
+                        var player = PlayerController.I;
                         switch (distanceVector.x)
                         {
                             case > 0 when player.transform.localScale.x > 0:
