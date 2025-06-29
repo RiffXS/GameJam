@@ -686,7 +686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 270493328271398146}
   - component: {fileID: 7300336940556596229}
-  - component: {fileID: 5092596391332628093}
+  - component: {fileID: 1181619414046394231}
   - component: {fileID: 5542291366858227878}
   m_Layer: 2
   m_Name: Player_1
@@ -767,7 +767,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &5092596391332628093
+--- !u!70 &1181619414046394231
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -801,8 +801,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00088367466, y: 0.0007250786}
-  m_Size: {x: 0.17483006, y: 0.20259862}
+  m_Offset: {x: 0.001219511, y: 0.0007250806}
+  m_Size: {x: 0.16314554, y: 0.20259862}
   m_Direction: 0
 --- !u!114 &5542291366858227878
 MonoBehaviour:
@@ -1606,8 +1606,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0018101692, y: 0.0028680563}
-  m_Size: {x: 0.2545042, y: 0.26770845}
+  m_Offset: {x: 0.00036688647, y: -0.0005530318}
+  m_Size: {x: 0.2401979, y: 0.26086628}
   m_Direction: 0
 --- !u!114 &6148099468198573409
 MonoBehaviour:
@@ -2242,8 +2242,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.000341756, y: 0.00034167094}
-  m_Size: {x: 0.29154405, y: 0.1712326}
+  m_Offset: {x: 0.000991204, y: -0.0009912596}
+  m_Size: {x: 0.286746, y: 0.16856723}
   m_Direction: 1
 --- !u!114 &3947077989244543312
 MonoBehaviour:
@@ -2382,8 +2382,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.000000019868216, y: 0.00018968186}
-  m_Size: {x: 0.17398457, y: 0.26276243}
+  m_Offset: {x: -0.0017224826, y: -0.0015328298}
+  m_Size: {x: 0.16364948, y: 0.25931746}
   m_Direction: 0
 --- !u!114 &3690830981547884323
 MonoBehaviour:
@@ -2797,8 +2797,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0007307052, y: 0.0010007384}
-  m_Size: {x: 0.2145621, y: 0.16044371}
+  m_Offset: {x: 0.00022466981, y: 0.000045393885}
+  m_Size: {x: 0.20692012, y: 0.15853369}
   m_Direction: 1
 --- !u!114 &5210049962687324054
 MonoBehaviour:

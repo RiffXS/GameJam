@@ -1,5 +1,4 @@
 using Player;
-using UnityEngine;
 
 namespace Foods
 {
@@ -9,7 +8,7 @@ namespace Foods
         {
             PlayerController player = PlayerController.I;
             
-            player.Transformation(player.currentTransformation + 1);
+            player.TransformTo(player.currentTransformation + 1);
         
             Destroy(gameObject);
         }

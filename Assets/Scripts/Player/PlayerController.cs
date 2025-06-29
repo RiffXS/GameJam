@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using Utils.Singleton;
 
@@ -6,14 +7,12 @@ namespace Player
     public class PlayerController : Singleton<PlayerController>
     {
         [SerializeField] private PlayerObject[] playerObjects;
+        
         [HideInInspector] public int currentTransformation;
     
-        public void Transformation(int transformation)
+        public void TransformTo(int transformation)
         {
-            playerObjects[transformation].transform.position = playerObjects[currentTransformation].transform.position;
-            playerObjects[transformation].gameObject.SetActive(true);
-            playerObjects[currentTransformation].gameObject.SetActive(false);
-            currentTransformation = transformation;
+            StartCoroutine(Transformation(transformation));
         }
 
         private void Start()
@@ -22,6 +21,20 @@ namespace Player
             {
                 playerObjects[i].gameObject.SetActive(i == currentTransformation);
             }
+        }
+
+        private IEnumerator Transformation(int transformation)
+        {
+            // eating sfx
+            
+            playerObjects[currentTransformation].FreezePlayer(true);
+            yield return new WaitForSeconds(2f);
+            playerObjects[currentTransformation].FreezePlayer(false);
+            
+            playerObjects[transformation].transform.position = playerObjects[currentTransformation].transform.position;
+            playerObjects[transformation].gameObject.SetActive(true);
+            playerObjects[currentTransformation].gameObject.SetActive(false);
+            currentTransformation = transformation;
         }
     }
 }
