@@ -13,9 +13,5 @@ namespace Player
             rigidbody.simulated = !freeze;
         }
         
-        private void Update()
-        {
-            gameObject.transform.parent.transform.position = gameObject.transform.position;
-        }
     }
 }

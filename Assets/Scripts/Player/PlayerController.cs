@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using Utils.Singleton;
@@ -10,15 +11,22 @@ namespace Player
         
         [HideInInspector] public int currentTransformation;
         
+        private GameObject currentPlayer;
         protected override void Awake()
         {
             base.Awake();
             for (var i = 0; i < playerObjects.Length; i++)
             {
+                currentPlayer = playerObjects[i].gameObject;
                 playerObjects[i].gameObject.SetActive(i == currentTransformation);
             }
         }
-        
+
+        private void Update()
+        {
+            transform.position = currentPlayer.transform.position;
+        }
+
         public void TransformTo(int transformation)
         {
             StartCoroutine(Transformation(transformation));
@@ -26,13 +34,13 @@ namespace Player
 
         private IEnumerator Transformation(int transformation)
         {
+            currentPlayer = playerObjects[currentTransformation].gameObject;
             playerObjects[currentTransformation].FreezePlayer(true);
             yield return new WaitForSeconds(2f);
             playerObjects[currentTransformation].FreezePlayer(false);
             
-            playerObjects[transformation].transform.position = playerObjects[currentTransformation].transform.position;
-            playerObjects[transformation].gameObject.SetActive(true);
-            playerObjects[currentTransformation].gameObject.SetActive(false);
+            currentPlayer.gameObject.SetActive(true);
+            currentPlayer.gameObject.SetActive(false);
             currentTransformation = transformation;
         }
     }
